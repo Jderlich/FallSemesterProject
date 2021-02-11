@@ -23,13 +23,13 @@ import torch.optim as optim
 import scipy.sparse as sp
 import numpy as np
 
-from pygcn.utils import load_data, accuracy, multiple_run_scores, load_data_pubmed
+from pygcn.utils import load_data, accuracy, load_data_pubmed
 from pygcn.models import GCN
 from sklearn.model_selection import ParameterGrid
 from sklearn.model_selection import train_test_split
 from torch.backends import cudnn
 
-from pygcn.train import make_model, train, train_iterator, test, multiple_run_with_rand_split, multiple_run_scores 
+from pygcn.train import make_model, train_iterator, test,  multiple_run_scores 
 
 # %matplotlib inline
 import matplotlib.pyplot as plt
