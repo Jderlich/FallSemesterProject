@@ -162,12 +162,3 @@ def multiple_run_scores(args, features, labels, adj, idx_train, idx_val, idx_tes
   return acc_test_list
 
 
-# Train model
-t_total = time.time()
-for epoch in range(args.epochs):
-    train(epoch)
-print("Optimization Finished!")
-print("Total time elapsed: {:.4f}s".format(time.time() - t_total))
-
-# Testing
-test()
