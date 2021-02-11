@@ -172,7 +172,8 @@ list_acc2 = multiple_run_scores(args, features2, labels2, adj2, idx_train2, idx_
 """###*3) PUBMED DataSet*"""
 
 # Load data
-adj3, features3, labels3 = load_data_pubmed(flag= True)
+# set the flag to false for the first run
+adj3, features3, labels3 = load_data_pubmed(flag= False)
 # load the indexes
 idx_train3, idx_val3, idx_test3 = find_indexes(features3, d = 0.003)
 # the dataset is not balanced regarding the label of the nodes
